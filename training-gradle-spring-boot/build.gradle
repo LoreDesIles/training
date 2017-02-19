@@ -1,0 +1,45 @@
+/*
+* Training Spring Boot Project
+*/
+group = 'com.blc.training.spring'
+//project.name = 'Training Spring Boot Project '
+version = '1.0.0-SNAPSHOT'
+description = """
+Training Spring Boot Project
+Project group: ${group}
+Project name: ${name}
+Project version: ${version}
+"""
+
+/**
+The repositories in the buildScript block are used to fetch the dependencies of your buildScript dependencies. 
+These are the dependencies that are put on the classpath of your build and that you can refer to from your build file. 
+For instance extra plugins that exist on the internet.
+*/
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.1.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'org.springframework.boot'
+
+/**
+The repositories on the root level are used to fetch the dependencies that your project depends on. 
+So all the dependencies you need to compile your project.
+*/
+repositories {
+    mavenCentral()
+}
+	
+	
+dependencies {
+	compile 'org.springframework.boot:spring-boot-starter'
+}
