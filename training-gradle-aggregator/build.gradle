@@ -46,3 +46,10 @@ subprojects {
 
 
 }
+
+
+eclipse {
+	project {
+		name = 'training-gradle-aggregator'
+	}
+}

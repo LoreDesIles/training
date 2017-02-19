@@ -15,5 +15,5 @@ include 'web'
 //include 'services:webservice'
 
 
-rootProject.name = 'blc-gradle-aggregator'
+rootProject.name = 'training-gradle-aggregator'
 
