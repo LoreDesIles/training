@@ -43,3 +43,10 @@ repositories {
 dependencies {
 	compile 'org.springframework.boot:spring-boot-starter'
 }
+
+
+eclipse {
+	project {
+		name = 'training-gradle-spring-boot'
+	}
+}
