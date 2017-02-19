@@ -16,6 +16,7 @@ Project name: ${name}
 Project version: ${version}
 """
 
+    apply plugin: 'eclipse'
 
 subprojects {
 	// Apply the java plugin to add support for Jav
